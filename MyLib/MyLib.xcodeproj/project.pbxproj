@@ -11,6 +11,9 @@
 		5FB71116229D343C00E060AD /* MyLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB71115229D343C00E060AD /* MyLibTests.swift */; };
 		5FB71118229D343C00E060AD /* MyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FB7110A229D343C00E060AD /* MyLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FB71122229D344E00E060AD /* Adder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB71121229D344E00E060AD /* Adder.swift */; };
+		5FB711C8229D631900E060AD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 5FB711C7229D631900E060AD /* Cartfile */; };
+		5FB711CB229D633300E060AD /* SwiftyGif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB711CA229D633300E060AD /* SwiftyGif.framework */; };
+		5FB711CD229D633C00E060AD /* SwiftyGif.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 5FB711CC229D633C00E060AD /* SwiftyGif.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,9 @@
 		5FB71115229D343C00E060AD /* MyLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibTests.swift; sourceTree = "<group>"; };
 		5FB71117229D343C00E060AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FB71121229D344E00E060AD /* Adder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adder.swift; sourceTree = "<group>"; };
+		5FB711C7229D631900E060AD /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		5FB711CA229D633300E060AD /* SwiftyGif.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyGif.framework; path = Carthage/Build/iOS/SwiftyGif.framework; sourceTree = "<group>"; };
+		5FB711CC229D633C00E060AD /* SwiftyGif.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyGif.framework.dSYM; path = Carthage/Build/iOS/SwiftyGif.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB711CB229D633300E060AD /* SwiftyGif.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +62,11 @@
 		5FB710FD229D343C00E060AD = {
 			isa = PBXGroup;
 			children = (
+				5FB711C7229D631900E060AD /* Cartfile */,
 				5FB71109229D343C00E060AD /* MyLib */,
 				5FB71114229D343C00E060AD /* MyLibTests */,
 				5FB71108229D343C00E060AD /* Products */,
+				5FB711C9229D633300E060AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +96,15 @@
 				5FB71117229D343C00E060AD /* Info.plist */,
 			);
 			path = MyLibTests;
+			sourceTree = "<group>";
+		};
+		5FB711C9229D633300E060AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FB711CC229D633C00E060AD /* SwiftyGif.framework.dSYM */,
+				5FB711CA229D633300E060AD /* SwiftyGif.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +199,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB711C8229D631900E060AD /* Cartfile in Resources */,
+				5FB711CD229D633C00E060AD /* SwiftyGif.framework.dSYM in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +374,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -381,6 +405,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
