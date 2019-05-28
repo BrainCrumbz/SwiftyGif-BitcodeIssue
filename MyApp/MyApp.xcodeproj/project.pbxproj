@@ -20,6 +20,7 @@
 		5FB71150229D349D00E060AD /* MyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB7114F229D349D00E060AD /* MyAppUITests.swift */; };
 		5FB7115E229D356200E060AD /* MyLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB7115D229D356200E060AD /* MyLib.framework */; };
 		5FB7115F229D356200E060AD /* MyLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB7115D229D356200E060AD /* MyLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5FB711D4229D7BBE00E060AD /* 3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5FB711D3229D7BBE00E060AD /* 3.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		5FB7114F229D349D00E060AD /* MyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppUITests.swift; sourceTree = "<group>"; };
 		5FB71151229D349D00E060AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FB7115D229D356200E060AD /* MyLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MyLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB711D3229D7BBE00E060AD /* 3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		5FB7112E229D349B00E060AD /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				5FB711D0229D7B5300E060AD /* Multimedia */,
 				5FB7112F229D349B00E060AD /* AppDelegate.swift */,
 				5FB71131229D349B00E060AD /* ViewController.swift */,
 				5FB71133229D349B00E060AD /* Main.storyboard */,
@@ -154,6 +157,14 @@
 				5FB71151229D349D00E060AD /* Info.plist */,
 			);
 			path = MyAppUITests;
+			sourceTree = "<group>";
+		};
+		5FB711D0229D7B5300E060AD /* Multimedia */ = {
+			isa = PBXGroup;
+			children = (
+				5FB711D3229D7BBE00E060AD /* 3.gif */,
+			);
+			path = Multimedia;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB711D4229D7BBE00E060AD /* 3.gif in Resources */,
 				5FB7113A229D349D00E060AD /* LaunchScreen.storyboard in Resources */,
 				5FB71137229D349D00E060AD /* Assets.xcassets in Resources */,
 				5F727D5A22A0344E00871E94 /* Cartfile in Resources */,

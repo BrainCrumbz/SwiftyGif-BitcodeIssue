@@ -14,6 +14,7 @@
 		5FB711C8229D631900E060AD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 5FB711C7229D631900E060AD /* Cartfile */; };
 		5FB711CB229D633300E060AD /* SwiftyGif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB711CA229D633300E060AD /* SwiftyGif.framework */; };
 		5FB711CD229D633C00E060AD /* SwiftyGif.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 5FB711CC229D633C00E060AD /* SwiftyGif.framework.dSYM */; };
+		5FB711CF229D7B0F00E060AD /* Giffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB711CE229D7B0F00E060AD /* Giffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		5FB711C7229D631900E060AD /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		5FB711CA229D633300E060AD /* SwiftyGif.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyGif.framework; path = Carthage/Build/iOS/SwiftyGif.framework; sourceTree = "<group>"; };
 		5FB711CC229D633C00E060AD /* SwiftyGif.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyGif.framework.dSYM; path = Carthage/Build/iOS/SwiftyGif.framework.dSYM; sourceTree = "<group>"; };
+		5FB711CE229D7B0F00E060AD /* Giffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giffer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				5FB7110A229D343C00E060AD /* MyLib.h */,
 				5FB7110B229D343C00E060AD /* Info.plist */,
 				5FB71121229D344E00E060AD /* Adder.swift */,
+				5FB711CE229D7B0F00E060AD /* Giffer.swift */,
 			);
 			path = MyLib;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB711CF229D7B0F00E060AD /* Giffer.swift in Sources */,
 				5FB71122229D344E00E060AD /* Adder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

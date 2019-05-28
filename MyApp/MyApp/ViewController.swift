@@ -19,6 +19,12 @@ class ViewController: UIViewController {
         
         let result = adder.add(a: 1, b: 2)
         
-        print("result: \(result)")
+        print("addition: \(result)")
+        
+        let giffer = Giffer()
+        
+        let imageView = giffer.build(fullname: "3.gif")
+        
+        print("gif size: \(imageView.gifImage!.size)")
     }
 }
