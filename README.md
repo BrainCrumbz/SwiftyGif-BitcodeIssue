@@ -3,11 +3,17 @@
 This workspace includes a library (framework) project and a client (app) project.
 
 Framework includes [SwiftyGif](https://github.com/kirualex/SwiftyGif) as a Carthage dependency.
-It has a couple of dummy classes to be used by clients, one of which involves SwiftyGif.
 
-At startup, app exercises framework (and SwiftyGif) through those dummy classes.
+At startup, app exercises framework through its public API.
 
-The issue shows up at build time. The issue does **not** show up when building for a simulated device.
+Some details:
+
+* Issue shows up at build time.
+
+* Issue does **not** show up when building for a simulated device. It shows with Generic iOS Device instead.
+
+* Issue shows up even if no SwiftyGif code is exercised at all. It's enough to add framework to link binary phase.
+When framework is removed from linked binaries list, issue goes away.
 
 ## Steps to reproduce
 
