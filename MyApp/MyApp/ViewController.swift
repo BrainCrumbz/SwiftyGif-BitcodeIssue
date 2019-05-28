@@ -21,7 +21,4 @@ class ViewController: UIViewController {
         
         print("result: \(result)")
     }
-
-
 }
-
