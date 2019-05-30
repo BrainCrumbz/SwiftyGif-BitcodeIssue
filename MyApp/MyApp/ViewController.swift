@@ -25,6 +25,6 @@ class ViewController: UIViewController {
         
         let imageView = giffer.build(fullname: "3.gif")
         
-        print("gif size: \(imageView.gifImage!.size)")
+        print("gif size: \(imageView.frameAtIndex(index: 0).size)")
     }
 }
