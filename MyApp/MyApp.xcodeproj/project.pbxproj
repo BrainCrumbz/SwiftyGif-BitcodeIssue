@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5F727D5A22A0344E00871E94 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 5F727D5922A0344E00871E94 /* Cartfile */; };
+		5F727D5D22A035CC00871E94 /* SwiftyGif.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 5F727D5B22A035CC00871E94 /* SwiftyGif.framework.dSYM */; };
+		5F727D5E22A035CC00871E94 /* SwiftyGif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F727D5C22A035CC00871E94 /* SwiftyGif.framework */; };
+		5F727D6022A035D900871E94 /* SwiftyGif.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F727D5C22A035CC00871E94 /* SwiftyGif.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5FB71130229D349B00E060AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB7112F229D349B00E060AD /* AppDelegate.swift */; };
 		5FB71132229D349B00E060AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB71131229D349B00E060AD /* ViewController.swift */; };
 		5FB71135229D349B00E060AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB71133229D349B00E060AD /* Main.storyboard */; };
@@ -44,6 +47,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				5FB7115F229D356200E060AD /* MyLib.framework in Embed Frameworks */,
+				5F727D6022A035D900871E94 /* SwiftyGif.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +56,8 @@
 
 /* Begin PBXFileReference section */
 		5F727D5922A0344E00871E94 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		5F727D5B22A035CC00871E94 /* SwiftyGif.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyGif.framework.dSYM; path = Carthage/Build/iOS/SwiftyGif.framework.dSYM; sourceTree = "<group>"; };
+		5F727D5C22A035CC00871E94 /* SwiftyGif.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyGif.framework; path = Carthage/Build/iOS/SwiftyGif.framework; sourceTree = "<group>"; };
 		5FB7112C229D349B00E060AD /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB7112F229D349B00E060AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FB71131229D349B00E060AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FB7115E229D356200E060AD /* MyLib.framework in Frameworks */,
+				5F727D5E22A035CC00871E94 /* SwiftyGif.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +104,8 @@
 		5FB71123229D349B00E060AD = {
 			isa = PBXGroup;
 			children = (
+				5F727D5C22A035CC00871E94 /* SwiftyGif.framework */,
+				5F727D5B22A035CC00871E94 /* SwiftyGif.framework.dSYM */,
 				5F727D5922A0344E00871E94 /* Cartfile */,
 				5FB7115D229D356200E060AD /* MyLib.framework */,
 				5FB7112E229D349B00E060AD /* MyApp */,
@@ -256,6 +265,7 @@
 				5FB71137229D349D00E060AD /* Assets.xcassets in Resources */,
 				5F727D5A22A0344E00871E94 /* Cartfile in Resources */,
 				5FB71135229D349B00E060AD /* Main.storyboard in Resources */,
+				5F727D5D22A035CC00871E94 /* SwiftyGif.framework.dSYM in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +468,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RBQ762EZ7Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,6 +491,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RBQ762EZ7Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
